@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-on-grid</title>
+    <style>
+.parent{
+    border-style: solid;
+    height: 900px;
+    width: 900px;
+    padding: 50px;
+    display:grid;
+    border-color: brown;
+    /* column-gap: 50px; */
+    align-items: start;
+    justify-items: center;
+    grid-template-rows: 225px 225px 225px 225px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:  rgb(80, 75, 16);
+
+
+}
+.child1{
+     border-style:dotted; 
+     border-color: brown;
+     height: 200px;
+    width: 200px; 
+    grid-column: 1/2; 
+    grid-row-start: 1/2;
+    background-image: url(IMG.jpg); 
+   
+
+
+   
+}
+.child2{
+    border-style: dotted; 
+     border-color: rgb(22, 8, 8);
+    height: 200px;
+    width: 200px; 
+    grid-column: 2/2; 
+    grid-row-start: 2;
+    background-image:url(cat.jpg);
+  
+
+}
+.child3{
+    border-style:dotted; 
+     border-color: rgb(37, 5, 5);
+    height: 200px;
+    width: 200px;
+    grid-row: 3; 
+    grid-column:3;
+    background-image: url(IMG2.jpg);
+   
+  
+}
+.child4{
+    border-style: dotted; 
+     border-color: rgb(37, 11, 11);
+    height: 200px;
+    width: 200px;
+    grid-row: 4; 
+    grid-column:4;
+    background-image: url(lizard.jpg);
+  
+   
+}
+
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="child1">     
+    </div>
+    <div class="child2">     
+    </div>
+    <div class="child3">     
+    </div>
+    <div class="child4">     
+    </div>
+   </div> 
+</body>
+</html>
